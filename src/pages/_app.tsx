@@ -3,6 +3,9 @@ import { AppProps } from 'next/app';
 import Head from 'next/head';
 import { MantineProvider } from '@mantine/core';
 import { emotionCache } from '../emotion-cache';
+import { Roboto_Flex } from 'next/font/google';
+const robotoFlex = Roboto_Flex({ subsets: ['latin'] })
+
 
 export default function App(props: AppProps) {
   const { Component, pageProps } = props;
@@ -20,6 +23,7 @@ export default function App(props: AppProps) {
         theme={{
           /** Put your mantine theme override here */
           colorScheme: 'light',
+          fontFamily: robotoFlex.style.fontFamily,
         }}
         emotionCache={emotionCache}
       >
