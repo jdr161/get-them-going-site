@@ -5,6 +5,7 @@ import { MantineProvider } from '@mantine/core';
 import { emotionCache } from '../emotion-cache';
 import { Roboto_Flex } from 'next/font/google';
 const robotoFlex = Roboto_Flex({ subsets: ['latin'] })
+import Layout from '@/components/layout';
 
 
 export default function App(props: AppProps) {
@@ -27,7 +28,9 @@ export default function App(props: AppProps) {
         }}
         emotionCache={emotionCache}
       >
-        <Component {...pageProps} />
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
       </MantineProvider>
     </>
   );
