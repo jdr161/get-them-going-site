@@ -1,5 +1,9 @@
 import Image from 'next/image'
 
 export default function Home() {
-  return <main></main>
+  return (
+    <div className='h-screen w-full'>
+      welcome to the homepage
+    </div>
+  )
 }
