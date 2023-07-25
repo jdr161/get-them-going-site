@@ -34,7 +34,7 @@ export default function Navbar() {
           </Title>
         </Grid.Col>
         <Grid.Col span='content'>
-          <DonateButton />
+          <DonateButton size='md' dark={true} />
         </Grid.Col>
       </Grid>
     </Container>
