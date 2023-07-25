@@ -5,7 +5,7 @@ import { MantineProvider, Tuple, DefaultMantineColor } from '@mantine/core'
 import { emotionCache } from '../emotion-cache'
 import { Roboto_Flex } from 'next/font/google'
 const robotoFlex = Roboto_Flex({ subsets: ['latin'] })
-import Layout from '@/components/layout'
+import Layout from '@components/layout'
 
 type ExtendedCustomColors =
   | 'lightBlue'

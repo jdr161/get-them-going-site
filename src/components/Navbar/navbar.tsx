@@ -1,6 +1,7 @@
 import { Container, Grid, Title, useMantineTheme } from '@mantine/core'
 import Image from 'next/image'
-import Logo from '@/images/GTG-logo-plain.png'
+import Logo from '@images/GTG-logo-plain.png'
+import donateButton from '@components/DonateButton/donateButton';
 
 export default function Navbar() {
   const theme = useMantineTheme();
@@ -11,7 +12,7 @@ export default function Navbar() {
       fluid={true}
       sx={(theme) => ({
         height: navbarHeight,
-        backgroundColor: theme.colors.backgroundLight,
+        backgroundColor: theme.colors.backgroundLight[0],
       })}
     >
       <Grid justify="center" align="center">
