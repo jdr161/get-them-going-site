@@ -8,10 +8,10 @@ const robotoFlex = Roboto_Flex({ subsets: ['latin'] })
 import Layout from '@/components/layout'
 
 type ExtendedCustomColors =
-  | 'light-blue'
-  | 'dark-blue'
-  | 'background-light'
-  | 'offwhite'
+  | 'lightBlue'
+  | 'darkBlue'
+  | 'backgroundLight'
+  | 'offWhite'
   | DefaultMantineColor
 
 declare module '@mantine/core' {
@@ -40,10 +40,10 @@ export default function App(props: AppProps) {
           colorScheme: 'light',
           fontFamily: robotoFlex.style.fontFamily,
           colors: {
-            'light-blue': ['#4C768D'],
-            'dark-blue': ['#1C4C64'],
-            'background-light': ['#EDF1F4'],
-            offwhite: ['#EDF1F4'],
+            'lightBlue': ['#4C768D'],
+            'darkBlue': ['#1C4C64'],
+            'backgroundLight': ['#EDF1F4'],
+            'offWhite': ['#EDF1F4'],
           },
         }}
         emotionCache={emotionCache}
