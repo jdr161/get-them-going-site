@@ -1,7 +1,7 @@
 import { Container, Grid, Title, useMantineTheme } from '@mantine/core'
 import Image from 'next/image'
 import Logo from '@images/GTG-logo-plain.png'
-import donateButton from '@components/DonateButton/donateButton';
+import DonateButton from '@/components/DonateButton/donateButton';
 
 export default function Navbar() {
   const theme = useMantineTheme();
@@ -34,7 +34,7 @@ export default function Navbar() {
           </Title>
         </Grid.Col>
         <Grid.Col span='content'>
-          buttons
+          <DonateButton />
         </Grid.Col>
       </Grid>
     </Container>
