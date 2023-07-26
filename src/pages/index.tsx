@@ -1,9 +1,17 @@
-import Image from 'next/image'
+import { Container } from '@mantine/core'
+import LibraryImage from '@images/library-hero-image.jpg'
 
 export default function Home() {
   return (
-    <div className='h-screen w-full'>
-      welcome to the homepage
-    </div>
+    <Container
+      fluid={true}
+      h={716}
+      sx={{
+        background: `url(${LibraryImage.src})`,
+        backgroundSize: 'cover',
+      }}
+    >
+
+    </Container>
   )
 }
