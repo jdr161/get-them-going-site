@@ -12,6 +12,7 @@ type ExtendedCustomColors =
   | 'darkBlue'
   | 'backgroundLight'
   | 'offWhite'
+  | 'lightGray'
   | DefaultMantineColor
 
 declare module '@mantine/core' {
@@ -44,6 +45,7 @@ export default function App(props: AppProps) {
             'darkBlue': ['#1C4C64'],
             'backgroundLight': ['#EDF1F4'],
             'offWhite': ['#EDF1F4'],
+            'lightGray': ['#D9D9D9']
           },
         }}
         emotionCache={emotionCache}
