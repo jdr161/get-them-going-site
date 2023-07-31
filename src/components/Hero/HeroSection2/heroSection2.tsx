@@ -7,7 +7,7 @@ export default function HeroSection2() {
 
   return (
     <Container
-      fluid={true}
+      fluid
       h={heroSection2Height}
       bg={theme.colors.darkBlue[0]}
     >

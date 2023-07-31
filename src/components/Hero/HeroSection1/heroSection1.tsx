@@ -25,7 +25,7 @@ export default function HeroSection1() {
 
   return (
     <Container
-      fluid={true}
+      fluid
       h={heroImageHeight}
       p={0}
       sx={{
