@@ -103,8 +103,8 @@ export default function BooksIcon({
         <path
           fill="none"
           stroke="#424242"
-          stroke-width="2.071"
-          stroke-miterlimit="10"
+          strokeWidth="2.071"
+          strokeMiterlimit="10"
           d="M45.21 83.7L19.1 46.76"
         ></path>
       </g>
