@@ -19,7 +19,7 @@ export default function Navbar() {
     >
       <Grid justify="center" align="center">
         <Grid.Col span="content" py={7.5}>
-          <Link href='/'>
+          <Link href="/">
             <Image
               height={navbarHeight - 15}
               src={Logo}
@@ -28,19 +28,19 @@ export default function Navbar() {
           </Link>
         </Grid.Col>
         <Grid.Col span="auto">
-            <Title
-              size={32}
-              weight={700}
-              color={theme.colors.lightBlue[0]}
-              align="center"
+          <Title
+            size={32}
+            weight={700}
+            color={theme.colors.lightBlue[0]}
+            align="center"
+          >
+            Get Them{' '}
+            <strong
+              style={{ fontWeight: 700, color: theme.colors.darkBlue[0] }}
             >
-              Get Them{' '}
-              <strong
-                style={{ fontWeight: 700, color: theme.colors.darkBlue[0] }}
-              >
-                Going
-              </strong>
-            </Title>
+              Going
+            </strong>
+          </Title>
         </Grid.Col>
         <Grid.Col span="content">
           <AboutUsMenu />

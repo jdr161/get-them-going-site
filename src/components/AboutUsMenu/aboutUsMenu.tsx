@@ -21,7 +21,13 @@ export default function AboutUsMenu() {
       <Menu.Target>
         <Button
           variant="subtle"
-          rightIcon={<DownArrowIcon width="15px" height="15px" color={theme.colors.lightBlue[0]} />}
+          rightIcon={
+            <DownArrowIcon
+              width="15px"
+              height="15px"
+              color={theme.colors.lightBlue[0]}
+            />
+          }
           className={classes.aboutUsButton}
           mr={20}
         >
