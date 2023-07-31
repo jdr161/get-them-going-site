@@ -3,6 +3,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import Logo from '@images/GTG-logo-plain.png'
 import DonateButton from '@/components/DonateButton/donateButton'
+import AboutUsMenu from '@components/AboutUsMenu/aboutUsMenu'
 
 export default function Navbar() {
   const theme = useMantineTheme()
@@ -42,6 +43,7 @@ export default function Navbar() {
             </Title>
         </Grid.Col>
         <Grid.Col span="content">
+          <AboutUsMenu />
           <DonateButton size="md" dark={true} />
         </Grid.Col>
       </Grid>
