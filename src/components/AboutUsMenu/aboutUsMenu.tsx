@@ -36,13 +36,13 @@ export default function AboutUsMenu() {
       </Menu.Target>
 
       <Menu.Dropdown>
-        <Link href="/mission" className={classes.link}>
+        <Link href="/about-us/mission" className={classes.link}>
           <Menu.Item>Mission</Menu.Item>
         </Link>
-        <Link href="/leadership" className={classes.link}>
+        <Link href="/about-us/leadership" className={classes.link}>
           <Menu.Item>Leadership</Menu.Item>
         </Link>
-        <Link href="/Stories" className={classes.link}>
+        <Link href="/about-us/stories" className={classes.link}>
           <Menu.Item>Stories</Menu.Item>
         </Link>
       </Menu.Dropdown>
