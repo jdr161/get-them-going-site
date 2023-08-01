@@ -1,4 +1,5 @@
 import { Container, createStyles } from '@mantine/core'
+import Link from 'next/link'
 
 const useStyles = createStyles((theme) => ({
   container: {
@@ -19,6 +20,10 @@ const useStyles = createStyles((theme) => ({
     color: 'white',
     fontSize: 30,
     fontWeight: 'bold',
+  },
+
+  link: {
+    textDecoration: 'none',
   },
 }))
 
@@ -43,15 +48,23 @@ export default function AboutUsHeader({
         height: navbarHeight,
       })}
     >
-      <div className={isMissionPage ? classes.largeText : classes.smallText}>
-        Our Mission
-      </div>
-      <div className={isLeadershipPage ? classes.largeText : classes.smallText}>
-        Leadership
-      </div>
-      <div className={isStoriesPage ? classes.largeText : classes.smallText}>
-        Stories
-      </div>
+      <Link href="/about-us/mission" className={classes.link}>
+        <div className={isMissionPage ? classes.largeText : classes.smallText}>
+          Our Mission
+        </div>
+      </Link>
+      <Link href="/about-us/leadership" className={classes.link}>
+        <div
+          className={isLeadershipPage ? classes.largeText : classes.smallText}
+        >
+          Leadership
+        </div>
+      </Link>
+      <Link href="/about-us/stories" className={classes.link}>
+        <div className={isStoriesPage ? classes.largeText : classes.smallText}>
+          Stories
+        </div>
+      </Link>
     </Container>
   )
 }
